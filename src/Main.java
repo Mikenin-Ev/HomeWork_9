@@ -31,6 +31,5 @@ public class Main {
         System.out.println("outputArry1: " + Arrays.toString(outputArry1));
         System.out.println(" ");
         System.out.println("Задача № 2.");
-
     }
 }
