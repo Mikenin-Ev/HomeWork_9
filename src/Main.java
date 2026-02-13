@@ -190,6 +190,6 @@ public class Main {
         }
         System.out.println("inputArry5: " + Arrays.toString(inputArry5));
         System.out.println("outputArry5: " + Arrays.toString(outputArry5));
-        System.out.println(month);
+        System.out.println("Месяцев в плюс: " + +month);
     }
 }
