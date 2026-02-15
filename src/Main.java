@@ -154,42 +154,37 @@ public class Main {
         System.out.println(" ");
         System.out.println("Задача № 4.");
         int inputArry4[] = new int[5];
-        boolean[] outputArry4 = new boolean[inputArry4.length];
-        int index4 = 0;
+        boolean[] outputArry4 = new boolean[1];
         for (int i = 0; i < inputArry4.length; i++) {
            inputArry4[i] = rand.nextInt(-3000, 3000);
         }
         for (int balance : inputArry4) {
             if (balance < 0) {
-                outputArry4[index4] = false;
+                outputArry4[0] = false;
                 break;
             } else {
-                outputArry4[index4] = true;
+                outputArry4[0] = true;
             }
-            System.out.println(inputArry4[index4]);
-            System.out.println(outputArry4[index4]);
-            index4++;
         }
+        System.out.println(Arrays.toString(inputArry4));
+        System.out.println(Arrays.toString(outputArry4));
         System.out.println(" ");
         System.out.println("Задача № 5.");
-        int month = 0;
+        int counter = 0;
         int index5 = 0;
         int inputArry5[] = new int[5];
-        int[] outputArry5 = new int[inputArry5.length];
+        int[] outputArry5 = new int[1];
         for (int i = 0; i < inputArry5.length; i++) {
             inputArry5[i] = rand.nextInt(-500, 5000);
         }
         for (int profit : inputArry5) {
-            if (profit <= 0){
-                outputArry5[index5] = 0;
-            }else {
-                outputArry5[index5] = 1;
+            if (profit > 0){
+                outputArry5[0] = 1;
+                counter++;
             }
-            month = month + outputArry5[index5];
-            index5++;
         }
         System.out.println("inputArry5: " + Arrays.toString(inputArry5));
         System.out.println("outputArry5: " + Arrays.toString(outputArry5));
-        System.out.println("Месяцев в плюс: " + +month);
+        System.out.println("Месяцев в плюс: " + counter);
     }
 }
